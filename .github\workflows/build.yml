@@ -18,7 +18,7 @@ jobs:
 
       - name: Create Android project
         run: |
-          mkdir -p app/src/main/java/com/heyun007/mind
+          mkdir -p app/src/main/java/com/heyun007/mindA
           mkdir -p app/src/main/res/values
           mkdir -p app/src/main/res/mipmap-xxxhdpi
 
@@ -167,7 +167,7 @@ jobs:
               namespace 'com.heyun007.mind'
               compileSdk 34
               defaultConfig {
-                  applicationId "com.heyun007.mind"
+                  applicationId "com.heyun007.mindA"
                   minSdk 21
                   targetSdk 34
                   versionCode 1
@@ -212,7 +212,7 @@ jobs:
 
       - name: Download icon
         run: |
-          curl -L -o app/src/main/res/mipmap-xxxhdpi/ic_launcher.png https://heyun007.github.io/Mind/icon.png || true
+          curl -L -o app/src/main/res/mipmap-xxxhdpi/ic_launcher.png https://heyun007.github.io/mindA/icon.png || true
 
       - uses: gradle/actions/setup-gradle@v3
         with:
